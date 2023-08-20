@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 class="burning-text">Registro de Alumnos</h2>
+    <div class="container">
+        <form action="procesar_registro.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="Fecha_nacimiento">Fecha de Nacimiento</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+
+            <label for="curso">Curso:</label>
+            <select id="curso" name="curso">
+                <option value="Programacion Web">Programacion Web</option>
+                <option value="Redes I">Redes I</option>
+                <option value="Analisis de Sistemas II">Analisis de Sistemas II</option>
+                <option value="Arquitectura de Computadoras II">Arquitectura de Computadoras II</option>
+                <option value="Etica Profesional">Etica Profesional</option>
+            </select>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+            
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion">
+
+            <input type="submit" value="Registrar">
+        </form>
+    </div>
+</body>
+</html>
